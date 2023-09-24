@@ -1,3 +1,9 @@
+
+
+
+
+
+
 /* style.css */
 
 /* Reset CSS */
@@ -27,7 +33,6 @@ header {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    text-align: center;
 }
 
 h2 {
@@ -36,8 +41,16 @@ h2 {
     margin-bottom: 20px;
 }
 
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .team-member {
+    flex: 0 0 calc(50% - 20px);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .team-member img {
@@ -52,4 +65,111 @@ h2 {
 
 .team-member p {
     color: #777;
+}
+
+/* style.css */
+
+/* ... (ваши предыдущие стили) */
+
+/* Стили для кнопок Instagram */
+.team-member a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #405de6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.team-member a:hover {
+    background-color: #3f50b5;
+}
+
+
+
+/* Стили для ссылки на Telegram */
+.telegram-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.telegram-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0088cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.telegram-link a:hover {
+    background-color: #0066aa;
+}
+
+
+
+/* style.css */
+
+/* ... (ваши предыдущие стили) */
+
+/* Стили для всех изображений команды */
+.team-member img {
+    max-width: 100%;
+    height: auto;
+    width: 200px; /* Установите желаемую ширину для изображений */
+    height: 200px; /* Установите желаемую высоту для изображений */
+    border-radius: 50%;
+}
+
+
+
+
+/* style.css */
+
+/* ... (ваши предыдущие стили) */
+
+/* Стили для контейнера галереи */
+.gallery-container {
+    max-width: 1200px;
+    margin: 30px auto 0; /* Добавьте отступ сверху */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.gallery-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Стили для галереи */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
 }
