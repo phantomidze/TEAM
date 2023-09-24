@@ -1,4 +1,18 @@
 
+/* style.css */
+
+/* Подключение шрифта Roboto с Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.gstatic.com');
+
+
+/* Применение шрифта к тексту на странице */
+body {
+    font-family: 'Josefin Sans', sans-serif; /* Используйте название выбранного шрифта */
+}
+
+/* ... (ваш остальной CSS) */
+
 
 
 
@@ -129,26 +143,10 @@ h2 {
 
 
 
+
 /* style.css */
 
 /* ... (ваши предыдущие стили) */
-
-/* Стили для контейнера галереи */
-.gallery-container {
-    max-width: 1200px;
-    margin: 30px auto 0; /* Добавьте отступ сверху */
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.gallery-container h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
 
 /* Стили для галереи */
 .gallery {
@@ -162,8 +160,8 @@ h2 {
 .gallery img {
     max-width: 100%;
     height: auto;
-    width: 400px;
-    height: 300px;
+    width: 400px; /* Увеличьте желаемую ширину для изображений в галерее */
+    height: 300px; /* Увеличьте желаемую высоту для изображений в галерее */
     margin: 10px;
     border: 2px solid #ddd;
     border-radius: 5px;
@@ -171,5 +169,21 @@ h2 {
 }
 
 .gallery img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+
+
+
+
+/* Медиа-запрос для адаптации под мобильные устройства */
+@media screen and (max-width: 768px) {
+    .gallery img {
+        width: 100%; /* Максимальная ширина для мобильных экранов */
+        height: auto;
+    }
+
+    .telegram-links {
+        margin-top: 10px; /* Уменьшенный отступ сверху для мобильных экранов */
+    }
 }
