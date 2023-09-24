@@ -89,7 +89,7 @@ header h1 {
 
 /* Стили для контейнера Telegram каналов */
 .telegram-links {
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -104,7 +104,7 @@ header h1 {
 .telegram-container {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 /* Стили для ссылок на Telegram каналы */
@@ -377,3 +377,48 @@ header h1 {
 
 /* Стили для кнопок социальных сетей (Instagram и Telegram) */
 /* ... (ваш предыдущий CSS код для кнопок Instagram и Telegram) */
+
+
+
+
+
+
+
+
+/* ... (ваш предыдущий CSS код) */
+
+/* Стили для контейнера Telegram каналов внизу страницы */
+.telegram-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Стили для контейнера каждой ссылки на Telegram канал */
+.telegram-link {
+    margin: 0 10px;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+/* Стили для изображений ссылок на Telegram каналы */
+.telegram-icon {
+    max-width: 200px; /* Увеличение размера изображения */
+    border-radius: 50%; /* Скругление изображения */
+    display: block;
+    margin: 0 auto;
+}
+
+.telegram-name {
+    margin-top: 5px; /* Расстояние сверху от изображения */
+    font-weight: bold;
+    color: skyblue; /* Цвет текста названия канала */
+    text-decoration: none; /* Убираем подчеркивание (риску) */
+    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+/* Стили для изменения цвета текста при наведении */
+.telegram-name:hover {
+    color: white; /* Изменяем цвет текста при наведении на ссылку */
+}
+
+/* ... (ваш предыдущий CSS код) */
