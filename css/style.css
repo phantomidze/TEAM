@@ -15,7 +15,7 @@ body {
 
 /* Стили для header */
 header {
-    background-color: #333;
+    background-color: #1f1f1f;
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
@@ -81,21 +81,11 @@ header h1 {
     font-size: 16px;
 }
 
-/* Стили для ссылок на Instagram */
-.team-member a {
-    display: inline-block;
-    background-color:orange;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 3px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
+/* style.css */
 
-.team-member a:hover {
-    background-color: #555;
-}
+/* ... (ваш предыдущий CSS код) */
+
+
 
 /* Стили для контейнера Telegram каналов */
 .telegram-links {
@@ -114,7 +104,7 @@ header h1 {
 .telegram-container {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 /* Стили для ссылок на Telegram каналы */
@@ -212,7 +202,6 @@ header h1 {
 
 
 
-
 /* style.css */
 
 /* ... (ваш предыдущий CSS код) */
@@ -222,10 +211,12 @@ header h1 {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #91b2ff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     text-align: center;
+    display: flex; /* Добавляем flex-контейнер для выравнивания аудиоэлементов */
+    justify-content: space-between; /* Равномерное распределение между элементами */
 }
 
 /* Стили для заголовка музыки h2 */
@@ -234,13 +225,22 @@ header h1 {
     margin-bottom: 20px;
 }
 
-/* Стили для аудиоэлемента */
+/* Стили для аудиоэлементов */
 .music-container audio {
     width: 100%;
     max-width: 400px; /* Максимальная ширина аудиоэлемента */
     margin: 0 auto;
     display: block;
+    background-color: #91b2ff;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -303,3 +303,77 @@ header h1 {
     padding: 10px;
 }
 
+
+
+
+
+
+/* style.css */
+
+/* ... (ваш предыдущий CSS код) */
+
+/* Стили для контейнера кнопок социальных сетей */
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Стили для кнопок социальных сетей (Instagram и Telegram) */
+.social-button {
+    flex: 1; /* Распределяет пространство равномерно между кнопками */
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.instagram-button {
+    background-color: #ff9f40; /* Цвет фона Instagram */
+    color: #fff; /* Цвет текста */
+}
+
+.telegram-button {
+    background-color: #0088cc; /* Цвет фона Telegram */
+    color: #fff; /* Цвет текста */
+}
+
+.social-button:hover {
+    opacity: 0.8; /* Уменьшение прозрачности при наведении */
+}
+
+
+
+
+/* style.css */
+
+/* ... (ваш предыдущий CSS код) */
+
+/* Стили для контейнера участника */
+.team-member {
+    position: relative; /* Добавляем позицию для позиционирования кнопки */
+}
+
+/* Стили для кнопки перехода на профиль */
+.profile-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #0088cc;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 0 0 0 5px;
+    font-size: 12px;
+}
+
+.profile-link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.profile-link span {
+    display: inline-block;
+}
+
+/* Стили для кнопок социальных сетей (Instagram и Telegram) */
+/* ... (ваш предыдущий CSS код для кнопок Instagram и Telegram) */
