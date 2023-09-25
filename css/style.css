@@ -389,35 +389,48 @@ header h1 {
 
 /* Стили для контейнера Telegram каналов внизу страницы */
 .telegram-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #608bd1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
 }
 
 /* Стили для контейнера каждой ссылки на Telegram канал */
 .telegram-link {
-    margin: 0 10px;
+    display: flex; /* Используем flex для расположения текста и изображения в строку */
+    align-items: center; /* Выравнивание по вертикали по центру */
+    margin: 10px 0; /* Отступы сверху и снизу */
     text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем стандартное подчеркивание ссылок */
+    color: inherit; /* Наследуем цвет текста */
+    border-radius: 5px; /* Скругление углов */
+    padding: 10px; /* Внутренний отступ */
 }
 
 /* Стили для изображений ссылок на Telegram каналы */
 .telegram-icon {
-    max-width: 200px; /* Увеличение размера изображения */
+    max-width: 100px; /* Уменьшил размер изображения */
     border-radius: 50%; /* Скругление изображения */
-    display: block;
-    margin: 0 auto;
+    margin-right: 10px; /* Расстояние между изображением и текстом */
+    border: 2px solid #91b2ff; /* Обводка */
+}
+
+/* Стили для текстового контента */
+.telegram-content {
+    text-align: left; /* Выравнивание текста слева */
 }
 
 .telegram-name {
-    margin-top: 5px; /* Расстояние сверху от изображения */
     font-weight: bold;
-    color: skyblue; /* Цвет текста названия канала */
-    text-decoration: none; /* Убираем подчеркивание (риску) */
+    color: #383838; /* Цвет текста названия канала */
     transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
 }
 
 /* Стили для изменения цвета текста при наведении */
-.telegram-name:hover {
+.telegram-link:hover .telegram-name {
     color: white; /* Изменяем цвет текста при наведении на ссылку */
 }
 
