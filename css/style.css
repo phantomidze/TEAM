@@ -539,3 +539,23 @@ header h1 {
   transform: translateY(-100%);
  }
 }
+
+
+
+/* Стили для мобильных устройств и планшетов */
+@media screen and (max-width: 768px) {
+    /* Пример адаптации ширины контейнера команды и шрифта */
+    .container {
+        max-width: 100%;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+
+    /* Другие стили для мобильных устройств */
+}
